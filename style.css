@@ -13,7 +13,7 @@
     --g9: #166534;
     --g10: #14532d;
     --o1: rgb(255, 208, 0); 
-    --spacing: 50px 
+    --spacing: 30px 
 }
 
 body{
@@ -48,6 +48,18 @@ body{
     grid-template-columns: 1fr 1fr;
     padding: 25px var(--spacing) 0 var(--spacing);
     
+}
+
+#search-icon{
+    width: min(40px, 100%);
+    height: min(40px, 100%);
+    cursor: pointer;
+}
+
+#bell-icon{
+    width: min(40px, 100%);
+    height: min(40px, 100%);
+    cursor: pointer;
 }
 
 .nav-search{
@@ -87,9 +99,6 @@ body{
     outline: 2px solid var(--g7);
 }
 
-.nav-search svg{
- cursor: pointer;
-}
 
 .nav-bottom{
     grid-row: 2;
@@ -212,7 +221,49 @@ body{
     margin: 0 0 var(--spacing) var(--spacing);
 }
 
+.projects>p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
 .right-content{
     border: 2px solid black;
     margin: 0 var(--spacing) var(--spacing) 0;
+}
+
+.cards{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing);
+}
+
+
+
+.single-card{
+    background-color: var(--g2);
+    border-radius: 20px;
+    padding: var(--spacing);
+    transition: transform 200ms;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px var(--g10);
+    border-left: 5px solid var(--g7);
+}
+
+.single-card:hover{
+    transform: translateY(-5px);
+}
+
+.single-card p{
+    margin: 0;
+}
+
+.project-title{
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.project-description{
+    color: #494949
 }
