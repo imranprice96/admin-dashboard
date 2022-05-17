@@ -23,7 +23,7 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 350px 4fr;
+    grid-template-columns: 320px 4fr;
     margin: 0;
 }
 
@@ -80,7 +80,7 @@ body{
 }
 
 .nav-profile img{
-    height: 50px;
+    height: 60px;
 }
 
 .nav-search input{
@@ -110,6 +110,7 @@ body{
     grid-template-columns: 1fr 4fr;
     padding:  0;
     gap: 20px;
+    align-items: center;
 }
 
 .bottom-header img{
@@ -215,7 +216,6 @@ body{
 }
 
 .projects{
-    border: 2px solid black;
     margin: 0 0 var(--spacing) var(--spacing);
 }
 
@@ -226,11 +226,10 @@ body{
 }
 
 .right-content{
-    border: 2px solid black;
     margin: 0 var(--spacing) var(--spacing) 0;
 }
 
-.right-content>p:first-child{
+#announcements{
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 1.5rem;
@@ -241,6 +240,7 @@ body{
     grid-template-rows: repeat(auto-fit, 1fr);
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing);
+    height: 60%;
 }
 
 .single-card{
@@ -249,11 +249,9 @@ body{
     padding: var(--spacing);
     transition: transform 200ms;
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px var(--g10);
-    border-left: 5px solid var(--g7);
+    border-left: 8px solid var(--o1);
     display: grid;
     flex-direction: column;
-    gap: 10px;
-    cursor: pointer;
 }
 
 .single-card:hover{
@@ -268,16 +266,29 @@ body{
     font-weight: bold;
     font-size: 1.2rem;
     letter-spacing: 1px;
+    align-self: flex-end;
+    padding-bottom: 5px;
 }
 
 .project-description{
-    color: #494949
+    opacity: 0.8;
+    font-size: 1.1rem;
 }
 
 .card-icons{
     display: flex;
     justify-content: end;
+    align-items: flex-end;
     gap: 20px;
+}
+
+.card-icons img{
+    height: 30px;
+    cursor: pointer;
+}
+
+.card-icons img:hover{
+    opacity: 0.5;
 }
 
 .announcement-cards{
@@ -285,6 +296,7 @@ body{
     padding: var(--spacing);
     border-radius: 20px;
     gap: 20px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px var(--g10);
 }
 
 .a-title{
@@ -295,10 +307,55 @@ body{
 }
 
 .a-content{
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .solid{
     border: 0.5px solid black;
     opacity: 0.5;
+}
+
+.trend-img{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.trending-profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.trending-profile p {
+    margin: 0;
+}
+
+.trending-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--g2);
+    padding: var(--spacing);
+    border-radius: 20px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px var(--g10);
+}
+
+.user-title{
+    opacity: 0.5;
+    font-size: 1rem;
+}
+
+.trend-user:hover{
+    color: var(--g9);
+}
+
+#trending{
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.tu-profile{
+    cursor: pointer;
 }
