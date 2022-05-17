@@ -32,6 +32,58 @@ body{
     background-color: var(--g2);
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px var(--g10);
     grid-row: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.nav-top{
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.nav-bottom{
+    grid-row: 2;
+}
+
+.nav-search{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    gap: 10px;
+}
+
+.nav-profile{
+    display: flex;
+    justify-content: end;
+    padding: 25px;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-bottom{
+    display:flex;
+    justify-content: space-between;
+}
+
+.bottom-header{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 25px;
+    gap: 10px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-buttons{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 25px;
+    gap: 25px;
 }
 
 .sidebar{
